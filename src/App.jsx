@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Hero, Works, About, Contact } from "./components";
+import { Hero, Works, About, Contact } from "./sections";
 
 const Container = styled.div`
   height: 100vh;
