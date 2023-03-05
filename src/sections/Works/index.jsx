@@ -1,5 +1,5 @@
 import React from "react";
-import { Section } from "../commonStyles";
+import { Section } from "../../commonStyles";
 
 function Works() {
   return <Section>Works</Section>;
