@@ -6,7 +6,7 @@ export const Section = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 export const Container = styled.div`
@@ -14,14 +14,11 @@ export const Container = styled.div`
   scroll-snap-align: center;
   width: 1400px;
   display: flex;
+  justify-content: space-between;
 `;
 
 export const Left = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  flex: 2;
+  flex: 1;
 `;
 
 export const WhatWeDo = styled.div`
@@ -47,26 +44,10 @@ export const Button = styled.button`
   background-color: #da4ea2;
   color: #fff;
   font-weight: 500;
-  width: 100px;
+  width: 120px;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-`;
-
-export const Img = styled.img`
-  width: 800px;
-  height: 600px;
-  object-fit: contain;
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  animation: animate 2s infinite ease alternate;
-
-  @keyframes animate {
-    to {
-      transform: translateY(20px);
-    }
-  }
 `;
 
 export const Title = styled.h3`
@@ -78,6 +59,9 @@ export const Subtitle = styled.h2`
 `;
 
 export const Right = styled.div`
-  position: relative;
-  flex: 3;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 `;
