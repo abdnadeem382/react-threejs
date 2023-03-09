@@ -11,7 +11,7 @@ import {
   Subtitle,
   Desc,
 } from "./Hero.styles";
-import { Navbar } from "../../components";
+import { Navbar, BubbleCanvas } from "../../components";
 
 function Hero() {
   return (
@@ -30,7 +30,7 @@ function Hero() {
           <Button>Learn more</Button>
         </Left>
         <Right>
-          {/* 3d model */}
+          <BubbleCanvas />
           <Img src="./img/moon.png" />
         </Right>
       </Container>

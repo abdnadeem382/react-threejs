@@ -60,6 +60,7 @@ export const Img = styled.img`
   position: absolute;
   inset: 0;
   margin: auto;
+  pointer-events: none;
   animation: animate 2s infinite ease alternate;
 
   @keyframes animate {
