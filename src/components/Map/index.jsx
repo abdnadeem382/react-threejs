@@ -9,11 +9,11 @@ import {
 const Map = () => {
   return (
     <ComposableMap
-      projection="geoAzimuthalEqualArea"
+      projection="geoMercator"
       projectionConfig={{
         rotate: [-10.0, -52.0, 0],
-        center: [50, -5],
-        scale: 1500,
+        center: [60, 10],
+        scale: 470,
       }}
       style={{
         width: "100%",
@@ -22,7 +22,7 @@ const Map = () => {
       }}
     >
       <Geographies
-        geography="/features.json"
+        geography={"./features.json"}
         fill="#2C065D"
         stroke="#FFFFFF"
         strokeWidth={0.5}
@@ -44,13 +44,13 @@ const Map = () => {
         }}
       >
         <text
-          x="80"
-          y="10"
+          x="95"
+          y="20"
           textAnchor="end"
           alignmentBaseline="middle"
           fill="#fff"
         >
-          {"Islamabad"}
+          {"We are in Islamabad"}
         </text>
       </Annotation>
     </ComposableMap>

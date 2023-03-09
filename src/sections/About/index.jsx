@@ -10,12 +10,15 @@ import {
   Subtitle,
   Desc,
 } from "./About.styles";
+import { CubeCanvas } from "../../components";
 
 function About() {
   return (
     <Section>
       <Container>
-        <Left>{/* 3d model */}</Left>
+        <Left>
+          <CubeCanvas />
+        </Left>
         <Right>
           <Title>Think Outside the squarespace</Title>
           <WhatWeDo>
