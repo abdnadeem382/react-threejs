@@ -13,10 +13,16 @@ export const Left = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const Right = styled.div`
   flex: 1;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Title = styled.h1`
@@ -52,4 +58,8 @@ export const Form = styled.form`
   flex-direction: column;
   width: 500px;
   gap: 25px;
+
+  @media only screen and (max-width: 768px) {
+    width: 300px;
+  }
 `;

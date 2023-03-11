@@ -7,18 +7,32 @@ export const Section = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 768px) {
+    height: 200vh;
+  }
 `;
 
 export const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   scroll-snap-align: center;
   width: 1400px;
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const Left = styled.div`
   flex: 1;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const WhatWeDo = styled.div`
@@ -52,6 +66,9 @@ export const Button = styled.button`
 
 export const Title = styled.h3`
   font-size: 74px;
+  @media only screen and (max-width: 768px) {
+    font-size: 56px;
+  }
 `;
 
 export const Subtitle = styled.h2`
@@ -64,4 +81,9 @@ export const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+
+  @media only screen and (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
