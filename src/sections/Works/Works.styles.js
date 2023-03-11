@@ -45,33 +45,14 @@ export const ListItem = styled.li`
   -webkit-text-stroke: 0.65px #fff;
   position: relative;
 
+  :hover {
+    color: #e08bbd;
+    -webkit-text-stroke: 0;
+  }
+
   @media only screen and (max-width: 768px) {
     font-size: 24px;
     color: #fff;
     -webkit-text-stroke: 0px;
-  }
-
-  @media only screen and (min-width: 769px) {
-    ::after {
-      content: "${(props) => props.text}";
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: pink;
-      width: 0px;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-    &:hover {
-      ::after {
-        animation: fillText 0.5s linear both;
-
-        @keyframes fillText {
-          to {
-            width: 100%;
-          }
-        }
-      }
-    }
   }
 `;
