@@ -2,7 +2,6 @@ import {
   Links,
   List,
   ListItem,
-  Logo,
   Button,
   Container,
   Icons,
@@ -15,9 +14,7 @@ function Navbar() {
     <Section>
       <Container>
         <Links>
-          <Logo src="./img/lama-logo.png" />
           <List>
-            <ListItem>Home</ListItem>
             <ListItem>Home</ListItem>
             <ListItem>Works</ListItem>
             <ListItem>Contact</ListItem>
